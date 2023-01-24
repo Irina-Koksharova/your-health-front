@@ -1,11 +1,13 @@
 import "./App.css";
+import Container from "./components/Container";
+import Header from "./components/Header";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <p>Learn React</p>
-    </div>
+    <Container>
+      <Header />
+    </Container>
   );
-}
+};
 
 export default App;
