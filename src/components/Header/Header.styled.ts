@@ -2,12 +2,17 @@ import styled from "styled-components";
 
 const ContainerStyled = styled.div``;
 
-const WrapperStyled = styled.div`
+const WrapperPrimaryStyled = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 711px;
+  width: 100%;
   margin-bottom: 36px;
 `;
 
-export { ContainerStyled, WrapperStyled };
+const WrapperSecondaryStyled = styled(WrapperPrimaryStyled)`
+  width: 711px;
+  margin-bottom: 0;
+`;
+
+export { ContainerStyled, WrapperPrimaryStyled, WrapperSecondaryStyled };

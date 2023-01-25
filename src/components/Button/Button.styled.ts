@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { colors } from "../../helpers/css-variables";
+import { colors } from "../../helpers/css-helper";
 
 interface Props {
   actionButton: boolean;

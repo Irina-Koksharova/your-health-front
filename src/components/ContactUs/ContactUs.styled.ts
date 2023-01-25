@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { colors } from "../../helpers/css-variables";
+import { colors } from "../../helpers/css-helper";
 
 const { accentBlue, primary } = colors;
 
@@ -32,11 +32,13 @@ const TextStyled = styled.p`
 `;
 
 const LinkStyled = styled.a`
+  display: block;
   color: inherit;
   line-height: 24px;
 
   &:hover {
     color: ${accentBlue};
+    transform: scale(1.01);
   }
 `;
 
