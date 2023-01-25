@@ -6,6 +6,10 @@ const LinkStyled = styled.a`
   align-items: center;
   height: 100%;
   border-radius: 50%;
+
+  &:hover {
+    transform: scale(1.05);
+  }
 `;
 
 export { LinkStyled };

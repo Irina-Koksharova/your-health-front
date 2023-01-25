@@ -1,10 +1,12 @@
+import SocialLinks from "../SocialLinks";
+import ContactUs from "../ContactUs";
 import { ContainerStyled } from "./Header.styled";
-import SocialLinks from "../SocialLinks/SocialLinks";
 
 const Header = () => {
   return (
     <ContainerStyled>
       <SocialLinks header />
+      <ContactUs />
     </ContainerStyled>
   );
 };

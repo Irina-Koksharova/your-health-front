@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { colors } from "../../helpers/css-variables";
 
 interface Props {
   header?: boolean;
@@ -16,13 +17,14 @@ const ListStyled = styled.ul`
 
   a {
     background-color: ${(props: Props) =>
-      props.header ? "#0067FF" : "#FFFFFF"};
+      props.header ? `${colors.accentBlue}` : `${colors.accentWhite}`};
   }
 
   svg {
     width: 15px;
     height: 15px;
-    fill: ${(props: Props) => (props.header ? "#FFFFFF" : "#0067FF")};
+    fill: ${(props: Props) =>
+      props.header ? `${colors.accentWhite}` : `${colors.accentBlue}`};
   }
 `;
 
