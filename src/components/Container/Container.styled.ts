@@ -1,0 +1,18 @@
+import styled from "styled-components";
+import { breakpoints } from "../../breakpoints/breakpoints";
+
+const ContainerStyled = styled.div`
+  max-width: ${breakpoints.primary.mobile}px;
+  margin: 0px auto;
+  padding: 57px 0px;
+
+  @media screen and (min-width: ${breakpoints.primary.tablet}px) {
+    max-width: ${breakpoints.primary.tablet}px;
+  }
+
+  @media screen and (min-width: ${breakpoints.primary.desktop}px) {
+    max-width: ${breakpoints.primary.desktop}px;
+  }
+`;
+
+export { ContainerStyled };
