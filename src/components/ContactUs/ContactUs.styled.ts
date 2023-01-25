@@ -1,8 +1,12 @@
 import styled from "styled-components";
 import { colors } from "../../helpers/css-variables";
 
+const { accentBlue, primary } = colors;
+
 const ListStyled = styled.ul`
   display: flex;
+  justify-content: space-between;
+  width: 417px;
 `;
 
 const ItemStyled = styled.li`
@@ -11,7 +15,7 @@ const ItemStyled = styled.li`
 `;
 
 const PathStyled = styled.path`
-  fill: ${colors.accentBlue};
+  fill: ${accentBlue};
 `;
 
 const SvgStyled = styled.svg`
@@ -19,7 +23,7 @@ const SvgStyled = styled.svg`
 `;
 
 const WrapperStyled = styled.div`
-  color: ${colors.primary};
+  color: ${primary};
 `;
 
 const TextStyled = styled.p`
@@ -32,7 +36,7 @@ const LinkStyled = styled.a`
   line-height: 24px;
 
   &:hover {
-    color: ${colors.accentBlue};
+    color: ${accentBlue};
   }
 `;
 

@@ -5,6 +5,8 @@ interface Props {
   header?: boolean;
 }
 
+const { accentBlue, accentWhite } = colors;
+
 const ListStyled = styled.ul`
   display: flex;
   justify-content: space-between;
@@ -17,14 +19,14 @@ const ListStyled = styled.ul`
 
   a {
     background-color: ${(props: Props) =>
-      props.header ? `${colors.accentBlue}` : `${colors.accentWhite}`};
+      props.header ? `${accentBlue}` : `${accentWhite}`};
   }
 
   svg {
     width: 15px;
     height: 15px;
     fill: ${(props: Props) =>
-      props.header ? `${colors.accentWhite}` : `${colors.accentBlue}`};
+      props.header ? `${accentWhite}` : `${accentBlue}`};
   }
 `;
 
