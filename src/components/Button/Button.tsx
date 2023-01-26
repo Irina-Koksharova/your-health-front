@@ -1,14 +1,14 @@
-import { ButtonStyled } from "./Button.styled";
+import { ThemeProvider } from "styled-components";
+import { IButton } from "../../interfaces/Button.interface";
+import { ButtonStyled, theme, invertTheme } from "./Button.styled";
 
-const Button = ({
-  actionButton = false,
-  children = "",
-  onClick = () => null,
-}) => {
+const Button = (props: IButton) => {
   return (
-    <ButtonStyled actionButton={actionButton} onClick={onClick}>
-      {children}
-    </ButtonStyled>
+    <ThemeProvider theme={props.hero ? invertTheme : theme}>
+      <ButtonStyled header={props.header} onClick={props.onClick}>
+        {props.children}
+      </ButtonStyled>
+    </ThemeProvider>
   );
 };
 

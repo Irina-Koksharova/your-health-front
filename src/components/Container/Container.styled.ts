@@ -4,7 +4,7 @@ import { breakpoints } from "../../breakpoints/breakpoints";
 const ContainerStyled = styled.div`
   max-width: ${breakpoints.primary.mobile}px;
   margin: 0px auto;
-  padding: 57px 0px;
+  padding: 50px 0 0;
 
   @media screen and (min-width: ${breakpoints.primary.tablet}px) {
     max-width: ${breakpoints.primary.tablet}px;

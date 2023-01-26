@@ -16,7 +16,7 @@ const Header = () => {
         <Logo />
         <WrapperSecondaryStyled>
           <ContactUs />
-          <Button actionButton>Make Appointment</Button>
+          <Button header>Make Appointment</Button>
         </WrapperSecondaryStyled>
       </WrapperPrimaryStyled>
       <WrapperPrimaryStyled>
