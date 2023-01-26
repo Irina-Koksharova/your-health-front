@@ -19,7 +19,7 @@ const PathStyled = styled.path`
 `;
 
 const SvgStyled = styled.svg`
-  margin-right: 15px;
+  margin: 0 15px 0 0;
 `;
 
 const WrapperStyled = styled.div`
@@ -27,7 +27,7 @@ const WrapperStyled = styled.div`
 `;
 
 const TextStyled = styled.p`
-  margin-bottom: 0;
+  margin: 0;
   line-height: 19px;
 `;
 
