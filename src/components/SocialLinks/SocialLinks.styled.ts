@@ -1,33 +1,30 @@
 import styled from "styled-components";
+import { ISocialLinks } from "../../interfaces/SocialLinks.interface";
 import { colors } from "../../helpers/css-helper";
-
-interface Props {
-  header?: boolean;
-}
 
 const { accentBlue, accentWhite } = colors;
 
-const ListStyled = styled.ul`
+const ListS = styled.ul`
   display: flex;
   justify-content: space-between;
-  width: ${(props: Props) => (props.header ? "169px" : "200px")};
+  width: ${({ header }: ISocialLinks) => (header ? "169px" : "200px")};
 
   > li {
-    width: ${(props: Props) => (props.header ? "31px" : "32px")};
-    height: ${(props: Props) => (props.header ? "31px" : "32px")};
+    width: ${({ header }: ISocialLinks) => (header ? "31px" : "35px")};
+    height: ${({ header }: ISocialLinks) => (header ? "31px" : "35px")};
   }
 
   a {
-    background-color: ${(props: Props) =>
-      props.header ? `${accentBlue}` : `${accentWhite}`};
+    background-color: ${({ header }: ISocialLinks) =>
+      header ? `${accentWhite}` : `${accentBlue}`};
   }
 
   svg {
-    width: 15px;
-    height: 15px;
-    fill: ${(props: Props) =>
-      props.header ? `${accentWhite}` : `${accentBlue}`};
+    width: 32px;
+    height: 32px;
+    fill: ${({ header }: ISocialLinks) =>
+      header ? `${accentBlue}` : `${accentWhite}`};
   }
 `;
 
-export { ListStyled };
+export { ListS };

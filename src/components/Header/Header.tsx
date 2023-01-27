@@ -4,26 +4,26 @@ import Button from "../Button";
 import Navigation from "../Navigation";
 import SocialLinks from "../SocialLinks";
 import {
-  ContainerStyled,
-  WrapperPrimaryStyled,
-  WrapperSecondaryStyled,
+  ContainerS,
+  WrapperPrimaryS,
+  WrapperSecondaryS,
 } from "./Header.styled";
 
 const Header = () => {
   return (
-    <ContainerStyled>
-      <WrapperPrimaryStyled>
+    <ContainerS>
+      <WrapperPrimaryS>
         <Logo />
-        <WrapperSecondaryStyled>
+        <WrapperSecondaryS>
           <ContactUs />
           <Button header>Make Appointment</Button>
-        </WrapperSecondaryStyled>
-      </WrapperPrimaryStyled>
-      <WrapperPrimaryStyled>
+        </WrapperSecondaryS>
+      </WrapperPrimaryS>
+      <WrapperPrimaryS>
         <Navigation />
         <SocialLinks header />
-      </WrapperPrimaryStyled>
-    </ContainerStyled>
+      </WrapperPrimaryS>
+    </ContainerS>
   );
 };
 

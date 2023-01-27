@@ -1,14 +1,16 @@
 interface IItem {
   title: string;
   text: string;
-  path: string[];
-  viewBox: string;
-  width: string;
-  height: string;
+  icon: string;
 }
-
 interface IListWithIcons {
   items: IItem[];
+  style: {};
+  column?: boolean;
 }
 
-export type { IListWithIcons };
+interface IList {
+  column?: boolean;
+}
+
+export type { IListWithIcons, IList };

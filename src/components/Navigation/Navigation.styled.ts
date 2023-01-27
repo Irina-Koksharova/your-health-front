@@ -3,18 +3,18 @@ import { colors } from "../../helpers/css-helper";
 
 const { accentBlue, primary } = colors;
 
-const NavStyled = styled.nav`
+const NavS = styled.nav`
   color: ${primary};
 `;
 
-const ListStyled = styled.ul`
+const ListS = styled.ul`
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 793px;
 `;
 
-const LinkStyled = styled.a`
+const LinkS = styled.a`
   display: block;
   padding: 10px;
   font-size: 14px;
@@ -28,4 +28,4 @@ const LinkStyled = styled.a`
   }
 `;
 
-export { NavStyled, ListStyled, LinkStyled };
+export { NavS, ListS, LinkS };

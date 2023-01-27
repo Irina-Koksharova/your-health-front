@@ -1,13 +1,13 @@
 import { ThemeProvider } from "styled-components";
 import { IButton } from "../../interfaces/Button.interface";
-import { ButtonStyled, theme, invertTheme } from "./Button.styled";
+import { ButtonS, theme, invertTheme } from "./Button.styled";
 
-const Button = (props: IButton) => {
+const Button = ({ hero, header, onClick, children }: IButton) => {
   return (
-    <ThemeProvider theme={props.hero ? invertTheme : theme}>
-      <ButtonStyled header={props.header} onClick={props.onClick}>
-        {props.children}
-      </ButtonStyled>
+    <ThemeProvider theme={hero ? invertTheme : theme}>
+      <ButtonS header={header} onClick={onClick}>
+        {children}
+      </ButtonS>
     </ThemeProvider>
   );
 };

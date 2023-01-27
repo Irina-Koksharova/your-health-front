@@ -1,10 +1,10 @@
 import { IIconLink } from "../../interfaces/IconLink.interface";
-import { LinkStyled } from "./IconLink.styled";
+import { LinkS } from "./IconLink.styled";
 
-const IconLink = (prop: IIconLink) => (
-  <LinkStyled href={prop.href} aria-label={prop.aria} target="_blank">
-    {prop.children}
-  </LinkStyled>
+const IconLink = ({ href, aria, children }: IIconLink) => (
+  <LinkS href={href} aria-label={aria} target="_blank">
+    {children}
+  </LinkS>
 );
 
 export default IconLink;

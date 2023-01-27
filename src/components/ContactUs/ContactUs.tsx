@@ -1,13 +1,12 @@
 import contacts from "../../data/contact-us.json" assert { type: "json" };
-import { namespace } from "../../helpers/svg-helper";
+import SvgUse from "../SvgUse";
 import {
-  ListStyled,
-  ItemStyled,
-  PathStyled,
-  SvgStyled,
-  WrapperStyled,
-  TextStyled,
-  LinkStyled,
+  ListS,
+  ItemS,
+  WrapperS,
+  TextS,
+  LinkS,
+  svgStyle,
 } from "./ContactUs.styled";
 
 const ContactUs = () => {
@@ -27,30 +26,19 @@ const ContactUs = () => {
   };
 
   return (
-    <ListStyled>
-      {contacts.map(
-        ({ type, text, icon, resource, viewBox, width, height }) => (
-          <ItemStyled key={resource}>
-            <SvgStyled
-              xmlns={namespace}
-              viewBox={viewBox}
-              width={width}
-              height={height}
-            >
-              {icon.map((item) => (
-                <PathStyled key={item} d={item} />
-              ))}
-            </SvgStyled>
-            <WrapperStyled>
-              <TextStyled>{text}</TextStyled>
-              <LinkStyled href={getHrefAttr(type, resource)} aria-label={type}>
-                {resource}
-              </LinkStyled>
-            </WrapperStyled>
-          </ItemStyled>
-        )
-      )}
-    </ListStyled>
+    <ListS>
+      {contacts.map(({ type, title, text, icon }) => (
+        <ItemS key={text}>
+          <SvgUse style={svgStyle} icon={icon} />
+          <WrapperS>
+            <TextS>{title}</TextS>
+            <LinkS href={getHrefAttr(type, title)} aria-label={type}>
+              {text}
+            </LinkS>
+          </WrapperS>
+        </ItemS>
+      ))}
+    </ListS>
   );
 };
 

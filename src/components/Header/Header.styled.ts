@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const ContainerStyled = styled.div`
+const ContainerS = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -9,15 +9,15 @@ const ContainerStyled = styled.div`
   margin: 0 auto 50px;
 `;
 
-const WrapperPrimaryStyled = styled.div`
+const WrapperPrimaryS = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
 `;
 
-const WrapperSecondaryStyled = styled(WrapperPrimaryStyled)`
+const WrapperSecondaryS = styled(WrapperPrimaryS)`
   width: 711px;
 `;
 
-export { ContainerStyled, WrapperPrimaryStyled, WrapperSecondaryStyled };
+export { ContainerS, WrapperPrimaryS, WrapperSecondaryS };

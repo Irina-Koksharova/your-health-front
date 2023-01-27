@@ -1,38 +1,28 @@
-import { namespace } from "../../helpers/svg-helper";
 import { IListWithIcons } from "../../interfaces/ListWithIcons.interface";
+import SvgUse from "../SvgUse";
 import {
-  List,
-  Item,
-  WrapperIcon,
-  Path,
-  Title,
-  Text,
+  ListS,
+  ItemS,
+  WrapperIconS,
+  TitleS,
+  TextS,
 } from "./ListWithIcons.styled";
 
-const ListWithIcons = ({ items }: IListWithIcons) => {
+const ListWithIcons = ({ items, style, column }: IListWithIcons) => {
   return (
-    <List>
-      {items.map(({ title, text, path, viewBox, width, height }) => (
-        <Item key={title}>
-          <WrapperIcon>
-            <svg
-              xmlns={namespace}
-              viewBox={viewBox}
-              width={width}
-              height={height}
-            >
-              {path.map((item) => (
-                <Path key={item} d={item} />
-              ))}
-            </svg>
-          </WrapperIcon>
+    <ListS column={column}>
+      {items.map(({ title, text, icon }) => (
+        <ItemS key={title} column={column}>
+          <WrapperIconS>
+            <SvgUse style={style} icon={icon} />
+          </WrapperIconS>
           <div>
-            <Title>{title}</Title>
-            <Text>{text}</Text>
+            <TitleS>{title}</TitleS>
+            <TextS>{text}</TextS>
           </div>
-        </Item>
+        </ItemS>
       ))}
-    </List>
+    </ListS>
   );
 };
 

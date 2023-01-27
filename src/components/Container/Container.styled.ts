@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { breakpoints } from "../../breakpoints/breakpoints";
 
-const ContainerStyled = styled.div`
+const ContainerS = styled.div`
   max-width: ${breakpoints.primary.mobile}px;
   margin: 0px auto;
   padding: 50px 0 0;
@@ -15,4 +15,4 @@ const ContainerStyled = styled.div`
   }
 `;
 
-export { ContainerStyled };
+export { ContainerS };
