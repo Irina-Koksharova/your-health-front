@@ -1,0 +1,17 @@
+[
+  {
+    "title": "1. Registration Process",
+    "text": "You can do it in any way convenient for you",
+    "icon": "icon-registration"
+  },
+  {
+    "title": "2. Diagnostic Process",
+    "text": "You will get full recommendations from our specialists",
+    "icon": "icon-diagnostic"
+  },
+  {
+    "title": "3. Treatment Process",
+    "text": "Our specialists will accompany you all the way to health",
+    "icon": "icon-treatment"
+  }
+]

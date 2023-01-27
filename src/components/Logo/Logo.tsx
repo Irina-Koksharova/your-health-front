@@ -1,13 +1,13 @@
 import logo from "../../images/logo.jpg";
-import { LinkStyled, WrapperStyled } from "./Logo.styled";
+import { LinkS, WrapperS } from "./Logo.styled";
 
 const Logo = () => {
   return (
-    <LinkStyled href="/" aria-label="Logo">
-      <WrapperStyled>
+    <LinkS href="/" aria-label="Logo">
+      <WrapperS>
         <img src={logo} alt="Logo Medical Life" />
-      </WrapperStyled>
-    </LinkStyled>
+      </WrapperS>
+    </LinkS>
   );
 };
 

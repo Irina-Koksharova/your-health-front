@@ -14,23 +14,23 @@ const invertTheme = ({ primary, secondary } = theme) => ({
   secondary: primary,
 });
 
-const ButtonStyled = styled.button`
+const ButtonS = styled.button`
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: ${(props: IButton) => (props.header ? "15px 31px" : "20px 39px")};
-  font-size: ${(props: IButton) => (props.header ? "14px" : "16px")};
-  line-height: ${(props: IButton) => (props.header ? "14px" : "16px")};
-  color: ${(props) => props.theme.secondary};
-  background-color: ${(props) => props.theme.primary};
+  padding: ${({ header }: IButton) => (header ? "15px 31px" : "20px 39px")};
+  font-size: ${({ header }: IButton) => (header ? "14px" : "16px")};
+  line-height: ${({ header }: IButton) => (header ? "14px" : "16px")};
+  color: ${({ theme }) => theme.secondary};
+  background-color: ${({ theme }) => theme.primary};
   border: 2px solid ${accentBlue};
   border-radius: 50px;
   cursor: pointer;
 
   &:hover {
-    color: ${(props) => props.theme.primary};
-    background-color: ${(props) => props.theme.secondary};
+    color: ${({ theme }) => theme.primary};
+    background-color: ${({ theme }) => theme.secondary};
   }
 `;
 
-export { ButtonStyled, theme, invertTheme };
+export { ButtonS, theme, invertTheme };

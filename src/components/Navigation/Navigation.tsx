@@ -1,19 +1,19 @@
 import links from "../../data/navigation-links.json" assert { type: "json" };
-import { NavStyled, ListStyled, LinkStyled } from "./Navigation.styled";
+import { NavS, ListS, LinkS } from "./Navigation.styled";
 
 const Navigation = () => {
   return (
-    <NavStyled>
-      <ListStyled>
+    <NavS>
+      <ListS>
         {links.map((link) => (
           <li key={link}>
-            <LinkStyled href={`#${link}`} aria-label={link}>
+            <LinkS href={`#${link}`} aria-label={link}>
               {link}
-            </LinkStyled>
+            </LinkS>
           </li>
         ))}
-      </ListStyled>
-    </NavStyled>
+      </ListS>
+    </NavS>
   );
 };
 

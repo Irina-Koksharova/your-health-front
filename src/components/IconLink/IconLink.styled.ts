@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const LinkStyled = styled.a`
+const LinkS = styled.a`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -12,4 +12,4 @@ const LinkStyled = styled.a`
   }
 `;
 
-export { LinkStyled };
+export { LinkS };

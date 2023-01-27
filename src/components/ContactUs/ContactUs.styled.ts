@@ -3,35 +3,27 @@ import { colors } from "../../helpers/css-helper";
 
 const { accentBlue, primary } = colors;
 
-const ListStyled = styled.ul`
+const ListS = styled.ul`
   display: flex;
   justify-content: space-between;
   width: 417px;
 `;
 
-const ItemStyled = styled.li`
+const ItemS = styled.li`
   display: flex;
   align-items: center;
 `;
 
-const PathStyled = styled.path`
-  fill: ${accentBlue};
-`;
-
-const SvgStyled = styled.svg`
-  margin: 0 15px 0 0;
-`;
-
-const WrapperStyled = styled.div`
+const WrapperS = styled.div`
   color: ${primary};
 `;
 
-const TextStyled = styled.p`
+const TextS = styled.p`
   margin: 0;
   line-height: 19px;
 `;
 
-const LinkStyled = styled.a`
+const LinkS = styled.a`
   display: block;
   color: inherit;
   line-height: 24px;
@@ -42,12 +34,10 @@ const LinkStyled = styled.a`
   }
 `;
 
-export {
-  ListStyled,
-  ItemStyled,
-  PathStyled,
-  SvgStyled,
-  WrapperStyled,
-  TextStyled,
-  LinkStyled,
+const svgStyle = {
+  width: "31px",
+  height: "31px",
+  margin: "0 15px 0 0",
 };
+
+export { ListS, ItemS, WrapperS, TextS, LinkS, svgStyle };
