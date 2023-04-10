@@ -9,7 +9,7 @@ const SocialLinks = ({ header = false }: ISocialLinks) => {
     <ListS header={header}>
       {links.map(({ title, url, icon }) => (
         <li key={url}>
-          <IconLink href={url} aria={title}>
+          <IconLink href={url} aria={title} tabIndex={0}>
             <SvgUse icon={icon} />
           </IconLink>
         </li>

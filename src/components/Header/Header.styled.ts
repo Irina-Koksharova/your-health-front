@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { flex } from "../../helpers/mixins";
 
 const ContainerS = styled.div`
   display: flex;
@@ -10,9 +11,8 @@ const ContainerS = styled.div`
 `;
 
 const WrapperPrimaryS = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  ${flex("space-between", "center")}
+
   width: 100%;
 `;
 

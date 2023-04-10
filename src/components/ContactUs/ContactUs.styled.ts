@@ -1,17 +1,17 @@
 import styled from "styled-components";
-import { colors } from "../../helpers/css-helper";
+import { colors } from "../../helpers/variables";
+import { flex, hover, focus } from "../../helpers/mixins";
 
 const { accentBlue, primary } = colors;
 
 const ListS = styled.ul`
-  display: flex;
-  justify-content: space-between;
+  ${flex("space-between", "stretch")}
+
   width: 417px;
 `;
 
 const ItemS = styled.li`
-  display: flex;
-  align-items: center;
+  ${flex("flex-start", "center")}
 `;
 
 const WrapperS = styled.div`
@@ -29,8 +29,23 @@ const LinkS = styled.a`
   line-height: 24px;
 
   &:hover {
+    ${hover(1.01)}
+
     color: ${accentBlue};
-    transform: scale(1.01);
+  }
+
+  &:focus {
+    padding: 6px 7px 6px 8px;
+    font-size: 14px;
+    line-height: 12px;
+    ${focus()}
+  }
+
+  &:active {
+    padding: 6px 7px 6px 8px;
+    font-size: 14px;
+    line-height: 12px;
+    color: ${primary};
   }
 `;
 

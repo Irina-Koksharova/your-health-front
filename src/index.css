@@ -1,3 +1,7 @@
+#root {
+  position: relative;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -25,4 +29,13 @@ img {
   display: block;
   width: 100%;
   height: auto;
+}
+
+button {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
 }

@@ -1,14 +1,19 @@
 import styled from "styled-components";
+import { iconRadius } from "../../helpers/variables";
+import { flex, hover, focus } from "../../helpers/mixins";
 
 const LinkS = styled.a`
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  ${flex("center", "center")}
+
   height: 100%;
-  border-radius: 50%;
+  border-radius: ${iconRadius};
 
   &:hover {
-    transform: scale(1.05);
+    ${hover(1.05)}
+  }
+
+  &:focus {
+    ${focus(iconRadius)}
   }
 `;
 

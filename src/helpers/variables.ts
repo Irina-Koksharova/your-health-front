@@ -5,4 +5,8 @@ const colors = {
   accentWhite: "#FFFFFF",
 };
 
-export { colors };
+const iconRadius = "50%";
+
+const buttonRadius = "50px";
+
+export { colors, iconRadius, buttonRadius };

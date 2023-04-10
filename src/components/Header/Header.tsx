@@ -16,7 +16,9 @@ const Header = () => {
         <Logo />
         <WrapperSecondaryS>
           <ContactUs />
-          <Button header>Make Appointment</Button>
+          <Button header aria-label="Make Appointment">
+            Make Appointment
+          </Button>
         </WrapperSecondaryS>
       </WrapperPrimaryS>
       <WrapperPrimaryS>
