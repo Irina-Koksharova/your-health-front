@@ -1,12 +1,13 @@
 import styled from "styled-components";
 import { ISocialLinks } from "../../interfaces/SocialLinks.interface";
-import { colors } from "../../helpers/css-helper";
+import { colors } from "../../helpers/variables";
+import { flex } from "../../helpers/mixins";
 
 const { accentBlue, accentWhite } = colors;
 
 const ListS = styled.ul`
-  display: flex;
-  justify-content: space-between;
+  ${flex("space-between", "stretch")}
+
   width: ${({ header }: ISocialLinks) => (header ? "169px" : "200px")};
 
   > li {

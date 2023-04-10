@@ -7,7 +7,7 @@ const Navigation = () => {
       <ListS>
         {links.map((link) => (
           <li key={link}>
-            <LinkS href={`#${link}`} aria-label={link}>
+            <LinkS href={`#${link}`} aria-label={link} tabIndex={0}>
               {link}
             </LinkS>
           </li>

@@ -1,12 +1,13 @@
 import styled from "styled-components";
 import banner from "../../images/hero-desktop.jpg";
-import { colors } from "../../helpers/css-helper";
+import { colors } from "../../helpers/variables";
+import { flex } from "../../helpers/mixins";
 
 const { secondary } = colors;
 
 const SectionS = styled.section`
-  display: flex;
-  align-items: center;
+  ${flex("flex-start", "center")}
+
   height: 727px;
   background-image: url(${banner});
 `;

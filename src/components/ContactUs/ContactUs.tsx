@@ -32,7 +32,10 @@ const ContactUs = () => {
           <SvgUse style={svgStyle} icon={icon} />
           <WrapperS>
             <TextS>{title}</TextS>
-            <LinkS href={getHrefAttr(type, title)} aria-label={type}>
+            <LinkS
+              href={getHrefAttr(type, title)}
+              aria-label={`${title}: ${type}`}
+            >
               {text}
             </LinkS>
           </WrapperS>

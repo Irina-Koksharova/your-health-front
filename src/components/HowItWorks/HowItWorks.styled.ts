@@ -1,11 +1,12 @@
 import styled from "styled-components";
-import { colors } from "../../helpers/css-helper";
+import { colors } from "../../helpers/variables";
+import { flex } from "../../helpers/mixins";
 
 const { primary } = colors;
 
 const SectionS = styled.section`
-  display: flex;
-  justify-content: space-between;
+  ${flex("space-between", "stretch")}
+
   width: 1200px;
   margin: 0 auto;
   padding: 167px 0 173px;

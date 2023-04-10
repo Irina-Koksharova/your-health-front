@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { IList } from "../../interfaces/ListWithIcons.interface";
-import { colors } from "../../helpers/css-helper";
+import { colors } from "../../helpers/variables";
 
 const { primary } = colors;
 

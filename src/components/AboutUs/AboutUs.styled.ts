@@ -1,12 +1,14 @@
 import styled from "styled-components";
 import { IAboutUs } from "../../interfaces/AboutUs.interface";
-import { colors } from "../../helpers/css-helper";
+import { colors } from "../../helpers/variables";
+import { flex } from "../../helpers/mixins";
 import mark from "../../images/mark.svg";
 
 const { accentBlue, primary } = colors;
 
 const SectionS = styled.section`
-  display: flex;
+  ${flex("flex-start", "stretch")}
+
   width: 1200px;
   margin: 0 auto;
   padding: 170px 0 160px;
