@@ -58,7 +58,7 @@
 <path fill="#005bbb" style="fill: var(--color1, #005bbb)" d="M0 0h48v32h-48v-32z"></path>
 <path fill="#ffd500" style="fill: var(--color2, #ffd500)" d="M0 16h48v16h-48v-16z"></path>
 </symbol>
-<symbol id="icon-flag-gb" viewBox="0 0 49 32">
+<symbol id="icon-flag-en" viewBox="0 0 49 32">
 <path fill="#f10002" style="fill: var(--color1, #f10002)" d="M21.917 0h4.92v32h-4.92v-32z"></path>
 <path fill="#f10002" style="fill: var(--color1, #f10002)" d="M0 13.257h48.755v5.486h-48.755v-5.486z"></path>
 <path fill="#092c70" style="fill: var(--color2, #092c70)" d="M5.368 0l15.655 11.429v-11.429h-15.655z"></path>

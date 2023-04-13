@@ -7,11 +7,15 @@ const { accentBlue } = colors;
 const WrapperS = styled.div`
   position: relative;
   width: 90px;
-  margin: 0 0 0 10px;
+  margin: 0 0 100px 10px;
   padding: 5px;
   overflow: hidden;
 
   &:focus {
+    outline: none;
+  }
+
+  &:focus-visible {
     ${focus()}
   }
 `;
@@ -26,18 +30,14 @@ const ContainerS = styled.div`
 `;
 
 const LabelS = styled.span`
-  margin: 0;
   height: 20px;
+  margin: 0;
   letter-spacing: -0.15em;
   visibility: hidden;
 `;
 
 const ButtonS = styled.button`
   ${flex("flex-start", "center")}
-
-  &:focus {
-    ${focus()}
-  }
 `;
 
 const ListS = styled.div`
@@ -58,12 +58,14 @@ const ItemS = styled.div`
   }
 
   &:focus {
-    justify-content: center;
-    ${focus()}
+    outline: none;
+  }
 
-    &>span {
-      display: none;
-    }
+  &:focus-visible {
+    padding: 2px;
+    font-size: 14px;
+
+    ${focus()}
   }
 `;
 
