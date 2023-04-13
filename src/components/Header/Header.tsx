@@ -8,16 +8,19 @@ import {
   WrapperPrimaryS,
   WrapperSecondaryS,
 } from "./Header.styled";
+import { useTranslation } from "react-i18next";
 
 const Header = () => {
+  const { t } = useTranslation();
+
   return (
     <ContainerS>
       <WrapperPrimaryS>
         <Logo />
         <WrapperSecondaryS>
           <ContactUs />
-          <Button header aria-label="Make Appointment">
-            Make Appointment
+          <Button header aria-label={t("description.button")}>
+            {t("description.headerButton")}
           </Button>
         </WrapperSecondaryS>
       </WrapperPrimaryS>
