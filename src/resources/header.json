@@ -1,0 +1,40 @@
+{
+  "logo": {
+    "en": "Logo",
+    "uk": "Логотип"
+  },
+  "mailUs": {
+    "en": "Mail Us",
+    "uk": "Написати"
+  },
+  "callUs": {
+    "en": "Call Us",
+    "uk": "Зателефонувати"
+  },
+  "appointment": {
+    "en": "Make Appointment",
+    "uk": "Запис на прийом"
+  },
+  "navigation": {
+    "about": {
+      "en": "About Us",
+      "uk": "Про нас"
+    },
+    "services": {
+      "en": "Services",
+      "uk": "Послуги"
+    },
+    "appointment": {
+      "en": "Appointment",
+      "uk": "Запис на прийом"
+    },
+    "blog": {
+      "en": "Blog",
+      "uk": "Статті"
+    },
+    "contact": {
+      "en": "Contact",
+      "uk": "Контакти"
+    }
+  }
+}

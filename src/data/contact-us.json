@@ -1,12 +1,12 @@
 [
   {
-    "type": "email",
+    "type": "mailUs",
     "title": "Mail Us",
     "text": "info@domain.com",
     "icon": "icon-mail"
   },
   {
-    "type": "phone",
+    "type": "callUs",
     "title": "Call Us",
     "text": "(+021) 2336 278",
     "icon": "icon-phone"

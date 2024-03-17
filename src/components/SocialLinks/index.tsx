@@ -1,0 +1,21 @@
+import links from "../../data/social-links.json" assert { type: "json" };
+import SvgUse from "../SvgUse";
+import { ISocialLinks } from "../../interfaces";
+import IconLink from "../IconLink";
+import { ListS } from "./styles";
+
+const SocialLinks = ({ header = false }: ISocialLinks) => {
+  return (
+    <ListS header={header}>
+      {links.map(({ title, url, icon }) => (
+        <li key={url}>
+          <IconLink href={url} aria={title} tabIndex={0}>
+            <SvgUse icon={icon} />
+          </IconLink>
+        </li>
+      ))}
+    </ListS>
+  );
+};
+
+export default SocialLinks;

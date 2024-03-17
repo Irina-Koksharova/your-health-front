@@ -1,11 +1,10 @@
-import Container from "./components/Container";
-import Header from "./components/Header";
-import Hero from "./components/Hero";
-import AboutUs from "./components/AboutUs";
-import HowItWorks from "./components/HowItWorks";
-import Select from "./components/Select";
-import ButtonUp from "./components/ButtonUp";
-import "./App.css";
+import Container from './components/Container';
+import Header from './components/Header';
+import Hero from './components/Hero';
+import AboutUs from './components/AboutUs';
+import HowItWorks from './components/HowItWorks';
+import ButtonUp from './components/ButtonUp';
+import './App.css';
 
 const App = () => {
   return (
@@ -15,7 +14,6 @@ const App = () => {
         <Hero />
         <AboutUs />
         <HowItWorks />
-        <Select />
       </Container>
       <ButtonUp />
     </>

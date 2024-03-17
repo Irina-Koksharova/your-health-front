@@ -1,8 +1,8 @@
 interface IButton {
-  hero?: boolean;
-  header?: boolean;
-  children: string;
+  isDefault?: boolean;
   onClick?: () => void;
+  children: string;
+  allyProps?: never
 }
 
 export type { IButton };
